@@ -8,10 +8,13 @@
 </head>
 <body>
     <h1>Il mio nome è:  {{$nome}} {{$cognome}}</h1> 
-    @for ($i = 0; $i < 10; $i++)
+    <!-- @for ($i = 0; $i < 10; $i++)
         <h1>The current value is {{ $i }}</h1> 
-    @endfor
+    @endfor -->
 
-    <a href="{{ route ('about') }}">Test</a>
+    <a href="{{ route ('forum') }}">Forum</a>
+    <a href="{{ route ('blog') }}">Blog</a>
+    <a href="{{ route ('community') }}">Community</a>
+    <a href="{{ route ('about') }}">About</a>
 </body>
 </html>

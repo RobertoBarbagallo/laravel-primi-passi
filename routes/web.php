@@ -14,12 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('myView', [
+    return view('homepage', [
         "nome" => "Roberto",
         "cognome" => "Barbagallo",
     ]);
-});
+})->name("homepage");
+
 
 Route::get('/about', function () {
     return view('about');
 })->name("about");
+
+Route::get('/blog', function () {
+    return view('blog');
+})->name("blog");
+
+Route::get('/forum', function () {
+    return view('forum');
+})->name("forum");
+
+Route::get('/community', function () {
+    return view('community');
+})->name("community");
