@@ -12,5 +12,6 @@
         <h1>The current value is {{ $i }}</h1> 
     @endfor
 
+    <a href="{{ route ('about') }}">Test</a>
 </body>
 </html>
