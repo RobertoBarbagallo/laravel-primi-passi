@@ -22,17 +22,29 @@ Route::get('/', function () {
 
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about', [
+        "nome" => "Roberto",
+        "cognome" => "Barbagallo"
+    ]);
 })->name("about");
 
 Route::get('/blog', function () {
-    return view('blog');
+    return view('blog', [
+        "nome" => "Roberto",
+        "cognome" => "Barbagallo"
+    ]);
 })->name("blog");
 
 Route::get('/forum', function () {
-    return view('forum');
+    return view('forum', [
+        "nome" => "Roberto",
+        "cognome" => "Barbagallo"
+    ]);
 })->name("forum");
 
 Route::get('/community', function () {
-    return view('community');
+    return view('community', [
+        "nome" => "Roberto",
+        "cognome" => "Barbagallo"
+    ]);
 })->name("community");

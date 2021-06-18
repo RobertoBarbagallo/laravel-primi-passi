@@ -2,6 +2,6 @@
 
 @section('page_title', 'Blog')
 @section('content')
-<h1>Blog</h1>
+<h1 class="main-title">Blog</h1>
 <a href="{{ route ('homepage') }}">Homepage</a>
 @endsection
